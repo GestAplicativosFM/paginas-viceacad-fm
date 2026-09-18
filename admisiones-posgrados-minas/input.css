@@ -1,0 +1,57 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme) prefix(tw);
+@import "tailwindcss/utilities.css" layer(utilities) prefix(tw);
+
+@theme {
+  --color-minas-amarillo: #f9ae00;
+  --color-minas-teal: #005f73;
+  --font-ancizar-sans: "Ancizar Sans", "Ancizar", ui-sans-serif, system-ui, sans-serif;
+  --font-ancizar-serif: "Ancizar Serif", "Ancizar", ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    background-color: #fefef9;
+    color: #333333;
+  }
+
+  #pae-admisiones-posgrados button {
+    appearance: none;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  #pae-admisiones-posgrados ol,
+  #pae-admisiones-posgrados ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@layer components {
+  .accordion-panel {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms ease;
+  }
+
+  .accordion-panel.is-open {
+    grid-template-rows: 1fr;
+  }
+
+  .accordion-panel-inner {
+    overflow: hidden;
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accordion-panel {
+    transition: none;
+  }
+}
