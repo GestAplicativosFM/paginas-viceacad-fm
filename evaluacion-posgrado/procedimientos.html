@@ -26,6 +26,12 @@
     .container { width: min(1160px, calc(100% - 2rem)); margin: 0 auto; }
     .doc-item[hidden] { display: none; }
     .focus-ring:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .breadcrumb { border-bottom: 1px solid var(--line); }
+    .breadcrumb ol { display: flex; flex-wrap: wrap; gap: .5rem 0; margin: 0; padding: 0; list-style: none; }
+    .breadcrumb li { display: flex; align-items: center; }
+    .breadcrumb li:not(:last-child)::after { content: '/'; margin: 0 .5rem; color: #6b7280; }
+    .breadcrumb a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+    .breadcrumb [aria-current='page'] { font-weight: 700; }
     .content-heading { border-left: 8px solid var(--gold); }
     .document-group { border-top: 5px solid var(--gold); }
   </style>
@@ -33,6 +39,14 @@
 <body>
   <main>
     <section class="container pb-10 pt-5" aria-labelledby="page-title">
+      <nav class="breadcrumb mb-8 pb-4 text-sm" aria-label="Miga de pan">
+        <ol>
+          <li><a href="https://minas.medellin.unal.edu.co/vicedecanatura/">Inicio</a></li>
+          <li><a href="https://minas.medellin.unal.edu.co/estudiantes">Estudiantes</a></li>
+          <li>Posgrados</li>
+          <li aria-current="page">Procedimientos</li>
+        </ol>
+      </nav>
       <div class="grid gap-8 lg:grid-cols-[1fr_280px]">
         <div>
           <div class="content-heading mb-8 max-w-3xl pl-6"><p class="mb-3 text-sm font-bold uppercase tracking-[.18em] text-unal">Estudiantes · Posgrados</p><h1 id="page-title" class="mb-4 text-5xl font-normal leading-none text-ink md:text-6xl">Procedimientos</h1><p class="max-w-2xl text-lg leading-relaxed text-slate-600">Consulta y descarga los instructivos vigentes para los procesos académicos y de admisión de posgrado.</p></div>

@@ -6,10 +6,18 @@
   <title>Invitaciones Públicas Sustentaciones | Posgrados - Facultad de Minas</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config={theme:{extend:{colors:{gold:'#f5c242',paper:'#fffdf5',ink:'#19312d',unal:'#007a53'},fontFamily:{ancizar:['Ancizar','Georgia','serif']}}}};</script>
-  <style>:root{--gold:#f5c242;--paper:#fffdf5;--ink:#19312d;--line:#e4c95f}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Ancizar,Georgia,serif}.container{width:min(1160px,calc(100% - 2rem));margin:auto}.content-heading{border-left:8px solid var(--gold)}.event[hidden]{display:none}a:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:3px}</style>
+  <style>@font-face{font-family:Ancizar;src:local('Ancizar Sans'),local('Ancizar')} :root{--gold:#f5c242;--paper:#fffdf5;--ink:#19312d;--line:#e4c95f}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Ancizar,Georgia,serif}.container{width:min(1160px,calc(100% - 2rem));margin:auto}.breadcrumb{border-bottom:1px solid var(--line)}.breadcrumb ol{display:flex;flex-wrap:wrap;gap:.5rem 0;margin:0;padding:0;list-style:none}.breadcrumb li{display:flex;align-items:center}.breadcrumb li:not(:last-child)::after{content:'/';margin:0 .5rem;color:#6b7280}.breadcrumb a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}.breadcrumb [aria-current='page']{font-weight:700}.content-heading{border-left:8px solid var(--gold)}.event[hidden]{display:none}a:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:3px}</style>
 </head>
 <body>
-<main class="container py-8 md:py-12" aria-labelledby="page-title">
+<main class="container py-5 md:py-8" aria-labelledby="page-title">
+  <nav class="breadcrumb mb-8 pb-4 text-sm" aria-label="Miga de pan">
+    <ol>
+      <li><a href="https://minas.medellin.unal.edu.co/vicedecanatura/">Inicio</a></li>
+      <li><a href="https://minas.medellin.unal.edu.co/estudiantes">Estudiantes</a></li>
+      <li>Posgrados</li>
+      <li aria-current="page">Invitaciones Públicas Sustentaciones</li>
+    </ol>
+  </nav>
   <div class="grid gap-8 lg:grid-cols-[1fr_280px]">
     <section>
       <div class="content-heading mb-8 pl-6"><p class="mb-3 text-sm font-bold uppercase tracking-[.18em] text-unal">Estudiantes · Posgrados</p><h1 id="page-title" class="mb-4 text-5xl font-normal leading-none md:text-6xl">Invitaciones Públicas Sustentaciones</h1><p class="max-w-2xl text-lg leading-relaxed text-slate-600">Consulta las próximas sustentaciones públicas de tesis y trabajos finales de la Facultad de Minas.</p></div>
