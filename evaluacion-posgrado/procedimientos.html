@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Procedimientos de posgrado de la Facultad de Minas, Universidad Nacional de Colombia.">
+  <title>Procedimientos de posgrado | Universidad Nacional de Colombia</title>
+  <link rel="icon" href="https://minas.medellin.unal.edu.co/vicedecanatura/templates/minas/images/sealColombia.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { unal: '#007a53', ink: '#173b35', gold: '#f5c242', mist: '#f4f7f3' },
+          fontFamily: { ancizar: ['Ancizar', 'Georgia', 'serif'] }
+        }
+      }
+    };
+  </script>
+  <style>
+    @font-face { font-family: Ancizar; src: local('Ancizar Sans'), local('Ancizar'); }
+    :root { --green: #007a53; --deep: #173b35; --gold: #f5c242; --mist: #fff8df; --paper: #fffdf5; --text: #19312d; --line: #e4c95f; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--text); background: var(--paper); font-family: Ancizar, Georgia, serif; }
+    .container { width: min(1160px, calc(100% - 2rem)); margin: 0 auto; }
+    .doc-item[hidden] { display: none; }
+    .focus-ring:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .content-heading { border-left: 8px solid var(--gold); }
+    .document-group { border-top: 5px solid var(--gold); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="container pb-10 pt-5" aria-labelledby="page-title">
+      <div class="grid gap-8 lg:grid-cols-[1fr_280px]">
+        <div>
+          <div class="content-heading mb-8 max-w-3xl pl-6"><p class="mb-3 text-sm font-bold uppercase tracking-[.18em] text-unal">Estudiantes · Posgrados</p><h1 id="page-title" class="mb-4 text-5xl font-normal leading-none text-ink md:text-6xl">Procedimientos</h1><p class="max-w-2xl text-lg leading-relaxed text-slate-600">Consulta y descarga los instructivos vigentes para los procesos académicos y de admisión de posgrado.</p></div>
+          <div class="mb-8 flex flex-wrap items-center gap-3 rounded-sm border-2 border-gold bg-gold/30 p-4 shadow-sm"><label class="flex min-w-[240px] flex-1 items-center gap-3" for="document-search"><span class="text-xl" aria-hidden="true">⌕</span><span class="sr-only">Filtrar documentos</span><input id="document-search" class="w-full border-0 bg-transparent text-base outline-none" type="search" placeholder="Filtrar por nombre del documento" data-document-filter></label><span class="text-sm font-bold text-ink" data-results-count aria-live="polite">10 documentos</span></div>
+          <div class="grid gap-5" data-document-groups>
+            <section class="document-group overflow-hidden rounded-sm border border-line bg-white shadow-sm" data-group>
+              <div class="border-l-4 border-unal bg-white px-6 py-5"><p class="mb-1 text-sm font-bold uppercase tracking-widest text-unal">01</p><h2 class="text-2xl font-normal text-ink">Evaluación de Actividades Académicas</h2></div>
+              <div class="divide-y divide-line" data-document-list>
+                <a class="doc-item group flex items-center justify-between gap-4 px-6 py-5 hover:bg-mist" data-document="tesis maestria doctorado 2026 ii" href="https://minas.medellin.unal.edu.co/vicedecanatura/component/phocadownload/category/2-proceso-de-admision?download=219:instructivo-evaluacion-tesis-de-maestria-y-doctorado-2026-2"><span><strong class="block font-normal text-ink group-hover:text-unal">Instructivo Evaluación Tesis de Maestría y Doctorado 2026-II</strong><small class="text-slate-500">Evaluación académica · PDF</small></span><span class="text-xl text-unal" aria-hidden="true">↗</span></a>
+                <a class="doc-item group flex items-center justify-between gap-4 px-6 py-5 hover:bg-mist" data-document="trabajo final maestria 2026 ii" href="https://minas.medellin.unal.edu.co/vicedecanatura/component/phocadownload/category/2-proceso-de-admision?download=220:instructivo-evaluacion-trabajo-final-de-maestria-2026-2"><span><strong class="block font-normal text-ink group-hover:text-unal">Instructivo Evaluación Trabajo Final de Maestría 2026-II</strong><small class="text-slate-500">Evaluación académica · PDF</small></span><span class="text-xl text-unal" aria-hidden="true">↗</span></a>
+                <a class="doc-item group flex items-center justify-between gap-4 px-6 py-5 hover:bg-mist" data-document="proyecto tesis propuesta trabajo final maestria 2026 ii" href="https://minas.medellin.unal.edu.co/vicedecanatura/component/phocadownload/category/2-proceso-de-admision?download=218:instructivo-evaluacion-proyecto-de-tesis-y-propuesta-de-trabajo-final-de-maestria-2026-2"><span><strong class="block font-normal text-ink group-hover:text-unal">Instructivo Evaluación Proyecto de Tesis y Propuesta de Trabajo Final de Maestría 2026-II</strong><small class="text-slate-500">Evaluación académica · PDF</small></span><span class="text-xl text-unal" aria-hidden="true">↗</span></a>
+                <a class="doc-item group flex items-center justify-between gap-4 px-6 py-5 hover:bg-mist" data-document="examen calificacion doctorado 2026 ii" href="https://minas.medellin.unal.edu.co/vicedecanatura/component/phocadownload/category/4-evaluacion?download=216:instructivo-evaluacion-examen-de-calificacion-de-doctorado-2026-2"><span><strong class="block font-normal text-ink group-hover:text-unal">Instructivo Evaluación Examen de Calificación de Doctorado 2026-II</strong><small class="text-slate-500">Evaluación académica · PDF</small></span><span class="text-xl text-unal" aria-hidden="true">↗</span></a>
+                <a class="doc-item group flex items-center justify-between gap-4 px-6 py-5 hover:bg-mist" data-document="proyecto tesis doctorado 2026 ii" href="https://minas.medellin.unal.edu.co/vicedecanatura/component/phocadownload/category/2-proceso-de-admision?download=217:instructivo-evaluacion-proyecto-de-tesis-de-doctorado-2026-2"><span><strong class="block font-normal text-ink group-hover:text-unal">Instructivo Evaluación Proyecto de Tesis de Doctorado 2026-II</strong><small class="text-slate-500">Evaluación académica · PDF</small></span><span class="text-xl text-unal" aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+            <section class="document-group overflow-hidden rounded-sm border border-line bg-white shadow-sm" data-group>
+              <div class="border-l-4 border-gold bg-white px-6 py-5"><p class="mb-1 text-sm font-bold uppercase tracking-widest text-unal">02</p><h2 class="text-2xl font-normal text-ink">Proceso de Admisión</h2></div>
+              <div class="divide-y divide-line" data-document-list>
+                <a class="doc-item group flex items-center justify-between gap-4 px-6 py-5 hover:bg-mist" data-document="admision anticipada posgrado 2026 ii" href="https://minas.medellin.unal.edu.co/vicedecanatura/component/phocadownload/category/2-proceso-de-admision?download=221:admision-anticipada-al-posgrado-2026-ii"><span><strong class="block font-normal text-ink group-hover:text-unal">Admisión anticipada al posgrado 2026-II</strong><small class="text-slate-500">Admisión · PDF</small></span><span class="text-xl text-unal" aria-hidden="true">↗</span></a>
+                <a class="doc-item group flex items-center justify-between gap-4 px-6 py-5 hover:bg-mist" data-document="formalizacion admision anticipada posgrado 2027 i" href="https://minas.medellin.unal.edu.co/vicedecanatura/component/phocadownload/category/2-proceso-de-admision?download=222:formalizacion-de-la-admision-anticipada-al-posgrado-2027-1"><span><strong class="block font-normal text-ink group-hover:text-unal">Formalización de la admisión anticipada al posgrado 2027-I</strong><small class="text-slate-500">Admisión · PDF</small></span><span class="text-xl text-unal" aria-hidden="true">↗</span></a>
+                <a class="doc-item group flex items-center justify-between gap-4 px-6 py-5 hover:bg-mist" data-document="solicitud transito maestria doctorado" href="https://minas.medellin.unal.edu.co/vicedecanatura/component/phocadownload/category/2-proceso-de-admision?download=223:solicitud-de-transito-a-maestria-o-doctorado"><span><strong class="block font-normal text-ink group-hover:text-unal">Solicitud de Tránsito a Maestría o Doctorado</strong><small class="text-slate-500">Admisión · PDF</small></span><span class="text-xl text-unal" aria-hidden="true">↗</span></a>
+                <a class="doc-item group flex items-center justify-between gap-4 px-6 py-5 hover:bg-mist" data-document="transito maestrias facultad minas" href="https://minas.medellin.unal.edu.co/vicedecanatura/component/phocadownload/category/2-proceso-de-admision?download=229:instructivo-para-el-transito-a-las-maestria-de-la-facultad-de-minas"><span><strong class="block font-normal text-ink group-hover:text-unal">Instructivo para el Tránsito a las Maestrías de la Facultad de Minas</strong><small class="text-slate-500">Admisión · PDF</small></span><span class="text-xl text-unal" aria-hidden="true">↗</span></a>
+                <a class="doc-item group flex items-center justify-between gap-4 px-6 py-5 hover:bg-mist" data-document="transito doctorados facultad minas" href="https://minas.medellin.unal.edu.co/vicedecanatura/component/phocadownload/category/2-proceso-de-admision?download=230:instructivo-para-el-transito-a-los-doctorados-de-la-facultad-de-minas"><span><strong class="block font-normal text-ink group-hover:text-unal">Instructivo para el Tránsito a los Doctorados de la Facultad de Minas</strong><small class="text-slate-500">Admisión · PDF</small></span><span class="text-xl text-unal" aria-hidden="true">↗</span></a>
+              </div>
+            </section>
+          </div>
+          <p class="mt-5 hidden rounded-sm border border-amber-300 bg-amber-50 p-4 text-amber-900" data-empty-state>No encontramos documentos con ese criterio.</p>
+        </div>
+        <aside class="h-fit rounded-sm border border-line bg-white p-6 shadow-sm" aria-labelledby="related-title"><p class="mb-3 text-sm font-bold uppercase tracking-widest text-unal">En esta sección</p><h2 id="related-title" class="mb-5 text-2xl font-normal text-ink">Posgrados</h2><nav class="grid gap-3 text-sm"><a class="border-l-2 border-transparent py-1 pl-3 hover:border-unal hover:text-unal" href="../distinciones/">Distinciones</a><a class="border-l-2 border-transparent py-1 pl-3 hover:border-unal hover:text-unal" href="../sustentaciones/">Invitaciones públicas sustentaciones</a><a class="border-l-2 border-unal py-1 pl-3 font-bold text-unal" href="#page-title" aria-current="page">Procedimientos</a><a class="border-l-2 border-transparent py-1 pl-3 hover:border-unal hover:text-unal" href="../evaluacion-actividades-posgrado/">Evaluación actividades posgrado</a></nav></aside>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const filter = document.querySelector('[data-document-filter]');
+    const items = [...document.querySelectorAll('.doc-item')];
+    const groups = [...document.querySelectorAll('[data-group]')];
+    const count = document.querySelector('[data-results-count]');
+    const empty = document.querySelector('[data-empty-state]');
+    const runFilter = (value) => { const query = value.trim().toLowerCase(); let visible = 0; items.forEach(item => { const match = !query || item.dataset.document.includes(query); item.hidden = !match; if (match) visible += 1; }); groups.forEach(group => { group.hidden = !group.querySelector('.doc-item:not([hidden])'); }); count.textContent = `${visible} documento${visible === 1 ? '' : 's'}`; empty.classList.toggle('hidden', visible !== 0); };
+    filter.addEventListener('input', event => runFilter(event.target.value));
+  </script>
+</body>
+</html>
